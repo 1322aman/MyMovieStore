@@ -1,0 +1,21 @@
+﻿MOVIE STORE TEST CASES
+
+1. Test case for connection to database
+	> Used a seprate class for DataConnection, every time when we perform any action
+	(like: add customer, add movie, delete customer, delete movie, or to show any kind of data),
+	SqlCommand get the connection first and then create its object.
+
+2.Test Case for add Customer
+	> Add customer button takes the iput values(like: name,address,phone) of customer and submit to database.
+	> to delete any customer, select the customer name from comboBox and click on delete button.
+	> to update any customer, select the customer name from comboBox first, fill its other fields and click on update button
+
+3.Test Case for Add Movies
+	> Add movie button takes the iput values(like: title,year,genre,rating,cost) of movie and submit to database.
+	> to delete any movie, select the movie name from comboBox which are available for rent
+	  and click on delete button (Note: only Flag=Available movies will be delete, rented movie can't be deleted).
+
+	  Note:
+	  db name is "MovieStore" and its .mdf file is place in "DataBase MDF file" folder.
+	  please Attach the database file in your MS SQL Server to run the App.
+	  Connection string is in App.config file
